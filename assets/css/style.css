@@ -311,7 +311,7 @@
     }
 
     .home__title{
-        font-size: var(--big-font-size);
+        font-size: var(--h1-font-size);
     }
 
     .home__subtitle{
@@ -539,8 +539,8 @@
     .skills__figma{
         width: 70%;
     }
-    .skills__sketch{
-        width: 0%;
+    .skills__canva{
+        width: 60%;
     }
     .skills__photoshop{
         width: 50%;
@@ -943,7 +943,8 @@
 
 .footer__social{
     font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
+    margin-right: var(--mb-1);
+    padding-top: 1rem;
 }
 
 .footer__social:hover{
@@ -962,6 +963,11 @@
 .footer__link,
 .footer__social{
     color: #fff;
+}
+
+.footer__links-social{
+    display: flex;
+    flex-direction: column;
 }
 
 /*========== SCROLL UP ==========*/
@@ -1093,7 +1099,19 @@
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
-    }    
+    }
+    
+    .contact__in4{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    
+    .contact__in4-social{
+        position: absolute;
+        right: 0;
+        margin-left: -50%;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -1225,8 +1243,12 @@
         padding-top: .8rem;
     }
 
+    .qualification__data {
+        column-gap: 13.5rem;
+    }
+
     .footer__container{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3);
     }
     .footer__bg{
         padding: 3rem 0 3.5rem;
@@ -1240,6 +1262,18 @@
     }
     .footer__copy{
         margin-top: 4.5rem;
+    }
+
+    .contact__in4{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    
+    .contact__in4-social{
+        position: absolute;
+        right: 0;
+        margin-left: -50%;
     }
 }
 /* For large devices */
@@ -1284,5 +1318,19 @@
     }
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .contact__in4{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .contact__in4-social{
+        position: absolute;
+        right: 0;
+        margin-left: -50%;
+    }
+
+    .qualification__data {
+        column-gap: 13.5rem;
     }
 }
